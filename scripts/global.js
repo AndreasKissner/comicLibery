@@ -1,6 +1,8 @@
-function init(){
+function init() {
     overlayToggle();
-}
+    renderHeader();
+    // ggf. renderMain(), renderFooter() usw.
+  }
 
 function overlayToggle(){
     let overlay = document.getElementById("overlay");
