@@ -1,0 +1,124 @@
+
+:root {
+ 
+}
+
+@font-face {
+    font-family: 'Tower of Silence';
+    src: url('assets/fonts/TowerofSilence.woff2') format('woff2'),
+        url('assets/fonts/TowerofSilence.woff') format('woff');
+    font-weight: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Tower of Silence';
+    font-size: 16px;
+
+}
+
+.cards_inventors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.card {
+    background-color:rgb(4, 103, 242);
+    backdrop-filter: blur(10px);
+    border-top: 5px solid rgba(255, 255, 255, 0.438);
+    border-left: 5px solid rgba(255, 255, 255, 0.459);
+    box-shadow: 3px 3px 3px (rgba 255,255,255, 0.076);
+    width: 300px;
+    border-radius: 20px;
+    text-align: center;
+    transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
+    margin-bottom: 60px;
+}
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 10px rgba(26, 6, 143, 0.479);
+}
+
+.img_person {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* oder "contain" */
+    display: block;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.info {   
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-bottom-left-radius: 10px;
+}
+.img_inv{
+    height:50px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 8px 8px 12px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    
+}
+
+.counter_heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.like_icon{
+    height: 30px;
+}
+.like_icon:hover{
+    transform:scale(1.2);
+}
+
+.card-properties {
+    align-items: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 100%;
+
+}
+
+.card-badge {
+    display: block;
+    font-size: 16px;
+    text-transform: lowercase;
+    background-color: #f91b06;
+    border-radius: 10px;
+    padding: 4px 8px;
+}
+
+.card-preis {
+    margin-left: auto;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.card-preis span{
+    color: red;
+}
+

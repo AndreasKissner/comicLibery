@@ -1,6 +1,8 @@
 function init() {
     overlayToggle();
     renderHeader();
+    renderFooter();
+   /*  renderMain(); */
     // ggf. renderMain(), renderFooter() usw.
   }
 

@@ -4,3 +4,14 @@ function getheaderTemplate(){
             <h1>Superman Comic cataloge</h1>
     `
 }
+function getFooterTemplate(){
+    return`
+    <h3>2025 Copyright by Warner Bros. Discovery</H3>
+    `
+}
+
+function getMainTemplate(){
+    return`
+   
+    `
+}

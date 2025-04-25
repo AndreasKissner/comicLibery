@@ -6,7 +6,6 @@ let catalog = {
         "miniName": "joe shuster",
         "role": "artist",
         "name": "Joe Shuster",
-        "role": "artist",
         "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
         "imageheart": "./assets/img/heart.png",
         "likes": 1250,
@@ -14,12 +13,11 @@ let catalog = {
       },
       {
         "image": "./assets/img/joe.png",
-        "miniName": "joe shuster",
-        "role": "artist",
-        "name": "Joe Shuster",
-        "role": "artist",
-        "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
-        "imageheart": "./assets/img/heart.png",
+        "miniName": "jerry siegel",
+        "role": "author",
+        "name": "Jerry Siegel",
+        "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 gemeinsam mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Seine Geschichten prägten das Genre der Superhelden maßgeblich. Trotz seines Einflusses hatte auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
+        "imageheart": "./assets/img/jerry.png",
         "likes": 1250,
         "liked": true
       }
@@ -32,8 +30,10 @@ let catalog = {
         "description": "Erster Auftritt von Superman",
         "creators": ["Jerry Siegel", "Joe Shuster"],
         "color": "color",
+        "likeheart" : "./assests/img/",
         "likes": 1250,
         "liked": true,
+
         "comments": [
           [
             {
