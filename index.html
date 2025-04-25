@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Superman Libery from 1938 - 2020</title>
+    <link rel="icon" type="image/png" href="assets/img/logo.png">
+
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+ <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 </head>
 <body onload="init()">
-<img id="output" alt="Inventor Image" />
 
-<div id="wrapper" class="class wrapper-box">
 
-    <header id="header" class="header_box"></header>
+<div id="wrapper" class="wrapper_box">
+
+    <header id="header" class="header_content">
+    
+            <img onclick="soundtrackEvent()"class="logo" src="./assets/img/logo.png" alt="Logo Superman">
+            <h1>Superman Comic cataloge</h1>
+
+    </header>
 
     <main id="main" class="main_box"></main>
 
-    <footer id="footer" class="footer_box"></footer>
+    <footer id="footer" class="footer_content">
+        <h3>2025 Copyright by Warner Bros. Discovery</H3>
+    </footer>
 
 </div>
 
 
 
-<div onclick="overlayToggle()" id="overlay" class="overlay_style d_none"></div>
+<div onclick="overlayToggle()" id="overlay" class="overlay_style "></div>
     
 <script src="script.js"></script>
 <script src="./scripts/global.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
 </body>
 </html>

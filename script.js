@@ -2,18 +2,26 @@ let catalog = {
   "info": {
     "inventors": [
       {
-        "image": "assets/img/jerry.png",
-        "name": "Jerry Siegel",
-        "role": "author",
-        "born": "1914-10-17",
-        "died": "1996-01-28"
+        "image": "./assets/img/joe.png",
+        "miniName": "joe shuster",
+        "role": "artist",
+        "name": "Joe Shuster",
+        "role": "artist",
+        "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
+        "imageheart": "./assets/img/heart.png",
+        "likes": 1250,
+        "liked": true
       },
       {
         "image": "./assets/img/joe.png",
+        "miniName": "joe shuster",
+        "role": "artist",
         "name": "Joe Shuster",
         "role": "artist",
-        "born": "1914-07-10",
-        "died": "1992-07-30"
+        "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
+        "imageheart": "./assets/img/heart.png",
+        "likes": 1250,
+        "liked": true
       }
     ],
     "1930s": [
@@ -446,7 +454,6 @@ let catalog = {
   }
 }
 
-
-console.log(catalog);
+/* 
 let img = document.getElementById("output");
-img.src = catalog.info.inventors[0].image; // Setzt den src-Wert des img-Elements
+img.src = catalog.info.inventors[0].image;  */// Setzt den src-Wert des img-Elements
