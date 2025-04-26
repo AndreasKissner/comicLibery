@@ -12,7 +12,7 @@ let catalog = {
         "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
         "imageheart": "./assets/img/heartlike.png",
         "likes": 1250,
-        "liked": true
+        "liked": false
       },
       {
         "logo" : "./assets/img/logo.png",
@@ -22,8 +22,8 @@ let catalog = {
         "name": "Jerry Siegel",
         "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
         "imageheart": "./assets/img/heartlike.png",
-
-        "liked": true
+        "likes": 1110,
+        "liked": false
       }
     ],
     
@@ -36,7 +36,7 @@ let catalog = {
         "creators": ["Jerry Siegel", "Joe Shuster"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1250,
-        "liked": true,
+        "liked": false,
 
         "comments": [
             {
@@ -69,7 +69,7 @@ let catalog = {
         "creators": ["Jerry Siegel", "Joe Shuster"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1250,
-        "liked": true,
+        "liked": false,
         "comments": [
             {
               "name": "ComicFan01",
@@ -101,7 +101,7 @@ let catalog = {
         "creators": ["Jerry Siegel", "Joe Shuster"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1250,
-        "liked": true,
+        "liked": false,
         "comments": [
             {
               "name": "ComicFan01",
@@ -135,7 +135,7 @@ let catalog = {
     "creators": ["Jerry Siegel", "Joe Shuster"],
     "heartLike": "./assets/img/heartlike.png",
     "likes": 870,
-    "liked": true,
+    "liked": false,
     "comments": [
         {
           "name": "GoldenAgeFan",
@@ -159,7 +159,7 @@ let catalog = {
     "creators": ["Jerry Siegel", "Leo Nowak"],
     "heartLike": "./assets/img/heartlike.png",
     "likes": 920,
-    "liked": true,
+    "liked": false,
     "comments": [
         {
           "name": "ComicArchivist",
@@ -183,7 +183,7 @@ let catalog = {
     "creators": ["Jerry Siegel", "Wayne Boring"],
     "heartLike": "./assets/img/heartlike.png",
     "likes": 1030,
-    "liked": true,
+    "liked": false,
     "comments": [
         {
           "name": "LoisLaneFan",
@@ -210,7 +210,7 @@ let catalog = {
         "creators": ["Otto Binder", "Curt Swan"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1120,
-        "liked": true,
+        "liked": false,
         "comments": [
             {
               "name": "ComicFan01",
@@ -242,7 +242,7 @@ let catalog = {
         "creators": ["Otto Binder", "Al Plastino"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1430,
-        "liked": true,
+        "liked": false,
         "comments": [
             {
               "name": "ComicFan01",
@@ -308,7 +308,7 @@ let catalog = {
         "creators": ["Edmond Hamilton", "Curt Swan"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1600,
-        "liked": true,
+        "liked": false,
         "comments": [
             {
               "name": "ComicFan01",
@@ -374,7 +374,7 @@ let catalog = {
         "creators": ["Otto Binder", "Curt Swan"],
         "heartLike" : "./assets/img/heartlike.png",
         "likes": 1375,
-        "liked": true,
+        "liked": false,
         "comments": [
           
             {

@@ -1,18 +1,18 @@
-function getheaderTemplate(){
-    return`
+function getheaderTemplate() {
+  return `
       <img onclick="soundtrackEvent()"class="logo" src="./assets/img/logo.png" alt="Logo Superman">
             <h1>Superman Comic catalog</h1>
     `
 }
-function getFooterTemplate(){
-    return`
+function getFooterTemplate() {
+  return `
     <h3>2025 Copyright by Warner Bros. Discovery</H3>
     `
 }
 
-function getMainTemplate(indexCreator){
-    let inventor = catalog.info.inventors[indexCreator];
-    return`
+function getMainTemplate(indexCreator) {
+  let inventor = catalog.info.inventors[indexCreator];
+  return `
        <div id="cards_inventors" class="cards_inventors">
                 <div class="card" id="card_of_2">
                     <div class="img_big_box" id="img-container-two">
@@ -46,8 +46,8 @@ function getMainTemplate(indexCreator){
     `
 }
 
-function getComicTemplate(comics){
-    return`
+function getComicTemplate(comics, key, index) {
+  return `
      
       <div class="comic-card">
             <img src="${comics.image}" alt="${comics.title}" class="comic-image" />
@@ -58,11 +58,18 @@ function getComicTemplate(comics){
               <p class="comic-year">Jahr: ${comics.year}</p>
               <div class="year_like_box">
              
-              <div class="comic-likes">
-                <img onclick="likeEvent()" src="${comics.heartLike}" alt="Like Heart" class="like-heart" />
-                <p class="likes">Likes</p>
-                <span id="like_counter" class="likes-count">${comics.likes}</span>
-              </div>
+             <img 
+               id="like_heart-${key}-${index}" 
+               onclick="likeEvent('${key}', ${index})" 
+               src="${comics.heartLike}" 
+               alt="Like Heart" 
+               class="like-heart ${comics.liked ? 'liked' : ''}" 
+               />
+              <p class="likes">Likes</p>
+             <span 
+              id="like_counter-${key}-${index}" 
+              class="likes-count">${comics.likes}</span>
+
               </div>
             </div>
               <p class="comic-description">${comics.description}</p>

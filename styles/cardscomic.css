@@ -55,21 +55,23 @@
   
   .year_like_box {
     display: flex;
+    gap: 8px;
+    align-items: center;
   }
   
-  .comic-likes {
+/*   .comic-likes {
     display: flex;
     align-items: center;
     gap: 8px;
-  }
+  } */
   
   .like-heart {
     width: 24px;
     height: 24px;
     filter: hue-rotate(-100deg) saturate(2);
   }
-  .like.after{
-filter:none;
+  .liked_after{
+     filter:none;
   }
   .like-heart:hover {
     transform: scale(1.2);
