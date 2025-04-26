@@ -2,7 +2,7 @@ function init() {
     overlayToggle();
     renderHeader();
     renderFooter();
-   /*  renderMain(); */
+    renderMain(); 
     // ggf. renderMain(), renderFooter() usw.
   }
 

@@ -1,12 +1,10 @@
 
-:root {
- 
-}
+
 
 @font-face {
     font-family: 'Tower of Silence';
-    src: url('assets/fonts/TowerofSilence.woff2') format('woff2'),
-        url('assets/fonts/TowerofSilence.woff') format('woff');
+    src: url('../assets/fonts/TowerofSilence.woff2') format('woff2'),
+        url('../assets/fonts/TowerofSilence.woff') format('woff');
     font-weight: normal;
 
 }
@@ -19,20 +17,32 @@
 
 body{
     font-family: 'Tower of Silence';
+    font-size: 300;
     font-size: 16px;
+   
 
 }
-
-.cards_inventors{
+.main_box{
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+.cards_inventors{
+   
+    width: 100%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 
 
 .card {
-    background-color:rgb(4, 103, 242);
+    color:blue;
+    
+    background-color:silver;
     backdrop-filter: blur(10px);
     border-top: 5px solid rgba(255, 255, 255, 0.438);
     border-left: 5px solid rgba(255, 255, 255, 0.459);
@@ -112,7 +122,7 @@ body{
     padding: 4px 8px;
 }
 
-.card-preis {
+.card-likes {
     margin-left: auto;
     font-size: 1.4rem;
     line-height: 1;

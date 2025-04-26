@@ -7,11 +7,16 @@ function renderHeader(){
  function renderMain(){
     let mainContent = document.getElementById("main");
         mainContent.innerHTML = "";
-        mainContent.innerHTML += getMainTemplate();
+
+        for (let indexCreator = 0; indexCreator < catalog.info.inventors.length; indexCreator++) {
+            mainContent.innerHTML += getMainTemplate(indexCreator);
+        }
  }
 
  function renderFooter(){
 let footerContent = document.getElementById("footer");
 footerContent.innerHTML = "";
+
+
 footerContent.innerHTML += getFooterTemplate();
  }

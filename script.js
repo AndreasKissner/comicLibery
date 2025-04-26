@@ -1,27 +1,32 @@
+
+
 let catalog = {
   "info": {
     "inventors": [
       {
+        "logo" : "./assets/img/logo.png",
         "image": "./assets/img/joe.png",
         "miniName": "joe shuster",
         "role": "artist",
         "name": "Joe Shuster",
         "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
-        "imageheart": "./assets/img/heart.png",
+        "imageheart": "./assets/img/heartlike.svg",
         "likes": 1250,
         "liked": true
       },
       {
-        "image": "./assets/img/joe.png",
+        "logo" : "./assets/img/logo.png",
+        "image": "./assets/img/jerry.png",
         "miniName": "jerry siegel",
         "role": "author",
         "name": "Jerry Siegel",
         "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 gemeinsam mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Seine Geschichten prägten das Genre der Superhelden maßgeblich. Trotz seines Einflusses hatte auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
-        "imageheart": "./assets/img/jerry.png",
+        "imageheart": "./assets/img/heartlike.svg",
         "likes": 1250,
         "liked": true
       }
     ],
+    
     "1930s": [
       {
         "image": "./assets/img/super1930.png",
@@ -457,3 +462,6 @@ let catalog = {
 /* 
 let img = document.getElementById("output");
 img.src = catalog.info.inventors[0].image;  */// Setzt den src-Wert des img-Elements
+
+
+/* console.log(catalog.info.inventors); */

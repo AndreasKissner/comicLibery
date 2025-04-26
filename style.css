@@ -15,7 +15,7 @@
 
 body {
   
-    background: linear-gradient(135deg, #0047ab, #ffcc00, #d50000);
+    background: linear-gradient(225deg, rgb(98, 95, 95), rgb(225, 215, 215), gray);
     min-height: 100vh;
     width: 100%;
  cursor: pointer;
@@ -94,6 +94,7 @@ h1 {
     align-items: center;
     justify-content: space-around;
     margin-top: auto;
+    margin-bottom: 60px;
 }
 
 .footer_content h3 {
