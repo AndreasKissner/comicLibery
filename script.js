@@ -20,7 +20,7 @@ let catalog = {
         "miniName": "jerry siegel",
         "role": "author",
         "name": "Jerry Siegel",
-        "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 gemeinsam mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Seine Geschichten prägten das Genre der Superhelden maßgeblich. Trotz seines Einflusses hatte auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
+        "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
         "imageheart": "./assets/img/heartlike.svg",
         "likes": 1250,
         "liked": true

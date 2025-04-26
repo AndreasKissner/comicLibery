@@ -31,28 +31,30 @@ body{
 .cards_inventors{
    
     width: 100%;
-    max-width: 80%;
+    max-width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
 }
 
-
 .card {
-    color:blue;
-    
-    background-color:silver;
+    position: relative; /* hinzugefügt */
+    z-index: 2; /* über dem Symbol */
+    color: blue;
+    background-color: silver;
     backdrop-filter: blur(10px);
     border-top: 5px solid rgba(255, 255, 255, 0.438);
     border-left: 5px solid rgba(255, 255, 255, 0.459);
-    box-shadow: 3px 3px 3px (rgba 255,255,255, 0.076);
-    width: 300px;
+    box-shadow: 3px 3px 3px rgba(114, 117, 113, 0.866);
+    width: 350px;
+    height: 550px;
+    overflow: hidden;
     border-radius: 20px;
     text-align: center;
     transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
     margin-bottom: 60px;
-}
+  }
 
 .card:hover{
     transform: scale(1.05);
@@ -60,14 +62,15 @@ body{
 }
 
 .img_person {
-    display: block;
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* oder "contain" */
-    display: block;
+    height: 200px; /* oder jede gewünschte feste Höhe */
+    object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    display: block;
+    background-color: #f5f5f5; /* optional, für leere Flächen */
 }
+
 .info {   
     position: absolute;
     top: 0;
@@ -115,9 +118,9 @@ body{
 
 .card-badge {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     text-transform: lowercase;
-    background-color: #f91b06;
+    background-color: #dfd8d6;
     border-radius: 10px;
     padding: 4px 8px;
 }
@@ -128,7 +131,31 @@ body{
     line-height: 1;
 }
 
-.card-preis span{
-    color: red;
-}
 
+
+.text_info {
+    font-size: 20px;
+}
+/* Shadow Logo */
+
+
+  .superman-symbol {
+    position: absolute;
+    bottom: 180px;
+    left: 50%;
+    transform: translateX(-50%) scale(2.5);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+    width: 120px;
+    z-index: 1; /* hinter der Karte */
+    filter: grayscale(70%) brightness(0.5); /* optionaler "Umriss"-Effekt */
+    pointer-events: none;
+  }
+  
+  
+  .card:hover .superman-symbol {
+    opacity: 0.1;
+    bottom: 180px;
+  }
+  
+  

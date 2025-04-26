@@ -33,8 +33,10 @@ function getMainTemplate(indexCreator){
                             </div>
                         </div>
                         <h2 id="card-title">${inventor.name}</h2>
-                        <p id="card-bio">${inventor.textInfo}</p>
+                        <p id="card-bio" class="text_info">${inventor.textInfo}</p>
                     </div>
+                    <img src="assets/img/shadowlogo.png" class="superman-symbol">
+
                 </div>
                 </div>
             </div>
