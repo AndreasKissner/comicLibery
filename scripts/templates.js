@@ -27,7 +27,7 @@ function getMainTemplate(indexCreator){
                             <div class="card-badge" id="badge-role">${inventor.role}</div>
                             <div class="card-likes" id="card-likes">
                                 <div class="counter_heart">
-                                <img onclick="likeEvent()" id="like_img" class="like_icon" src="${inventor.imageheart}" alt="Like Heart">
+                                <img  onclick="likeEvent()" id="like_img" class="like_icon" src="${inventor.imageheart}" alt="Like Heart">
                                 <p id="counter" class="counter_number">${inventor.likes}</p>
                                 </div>
                             </div>
@@ -40,6 +40,52 @@ function getMainTemplate(indexCreator){
                 </div>
                 </div>
             </div>
+            
+      
+          
     `
 }
 
+function getComicTemplate(comics){
+    return`
+     
+      <div class="comic-card">
+            <img src="${comics.image}" alt="${comics.title}" class="comic-image" />
+            
+            <div class="comic-content">
+              <h2 class="comic-title">${comics.title}</h2>
+              <div class="like_box">
+              <p class="comic-year">Jahr: ${comics.year}</p>
+              <div class="year_like_box">
+             
+              <div class="comic-likes">
+                <img onclick="likeEvent()" src="${comics.heartLike}" alt="Like Heart" class="like-heart" />
+                <p class="likes">Likes</p>
+                <span id="like_counter" class="likes-count">${comics.likes}</span>
+              </div>
+              </div>
+            </div>
+              <p class="comic-description">${comics.description}</p>
+              <p class="comic-creators">Von: ${comics.creators}</p>
+              <div class="comic-comments">
+                <h3>Kommentare:</h3>
+                
+                <div class="comment-list">
+                  <ul>
+                  ${comics.comments.map(comment => `
+                    <li><strong>${comment.name}:</strong> ${comment.comment}</li>
+                  `).join("")}
+                  </ul>
+                </div>
+                <label for="comment_field">Ihr Kommentar</label>
+                <input type="text" id="commment_field" placeholder="max. 150 Zeichen">
+                <button id="send_comment" type="button">Send</button>
+              </div>
+              
+              
+            </div>
+         
+          </div>
+        
+    `
+}
