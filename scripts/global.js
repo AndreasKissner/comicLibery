@@ -4,7 +4,6 @@ function init() {
     renderFooter();
     renderMain(); 
     renderComics();
-    // ggf. renderMain(), renderFooter() usw.
   }
 
 function overlayToggle(){
@@ -34,3 +33,10 @@ function likeEvent(section, index) {
 
   likeCounter.textContent = item.likes;
 }
+
+function moveComments(){
+let inputFieldComRef = document.getElementById("comment_field");
+inputComField =inputFieldComRef.ariaValueMax;
+}
+// <input type="text" id="commment_field" placeholder="max. 150 Zeichen">
+//<button onclick="moveComments" id="send_comment" type="button">Send</button>

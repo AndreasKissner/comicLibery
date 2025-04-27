@@ -86,12 +86,13 @@ function getComicTemplate(comics, key, index) {
                 </div>
                 <label for="comment_field">Ihr Kommentar</label>
                 <input type="text" id="commment_field" placeholder="max. 150 Zeichen">
-                <button id="send_comment" type="button">Send</button>
+                <button onclick="moveComments" id="send_comment" type="button">Send</button>
+              <img src="assets/img/shadowlogo.png" class="superman-symbol">
               </div>
-              
+               
               
             </div>
-         
+           
           </div>
         
     `

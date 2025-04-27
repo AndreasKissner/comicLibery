@@ -1,4 +1,6 @@
   .comic-card {
+    position: relative; /* hinzugefügt */
+    z-index: 2; /* über dem Symbol */
     color: blue;
     font-family: monospace;
     font-weight: 900;
@@ -58,12 +60,6 @@
     gap: 8px;
     align-items: center;
   }
-  
-/*   .comic-likes {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  } */
   
   .like-heart {
     width: 24px;
@@ -125,11 +121,7 @@
     scrollbar-color: rgb(232, 219, 224) #cfc4c4;
   }
 
-  .comic-card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
 
   /* Shadow Logo */
   .superman-symbol {
@@ -149,5 +141,25 @@
   .card:hover .superman-symbol {
     opacity: 0.1;
     bottom: 180px;
+  }
+  
+ 
+  .superman-symbol {
+    position: absolute;
+    bottom: 150px;
+    left: 50%;
+    transform: translateX(-50%) scale(2.5);
+    opacity: 0;
+    transition: all 400ms ease-in-out;
+    width: 120px;
+    z-index: 1; 
+    filter: grayscale(50%) brightness(0.5);
+    pointer-events: none;
+  }
+  
+
+  .comic-card:hover .superman-symbol {
+    opacity: 0.1;
+    bottom: 170px; 
   }
   

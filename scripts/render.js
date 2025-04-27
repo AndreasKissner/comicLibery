@@ -12,22 +12,25 @@ function renderHeader(){
         }  
     }
 
-
-function renderComics() {
-  let mainComicCards = document.getElementById("comic_cards");
-  mainComicCards.innerHTML = "";
-  let info = catalog.info;
-
-  for (let key in info) {
-    if (Array.isArray(info[key]) && key.endsWith("0s")) { 
-      let comics = info[key];
-      for (let i = 0; i < comics.length; i++) {
-        mainComicCards.innerHTML += getComicTemplate(comics[i], key, i); 
-        //  Ich gebe jetzt comics[i], key, i mit!
-      }// Nochmal durchgehen die logig
+    function renderComics() {
+      let mainComicCards = document.getElementById("comic_cards");
+      mainComicCards.innerHTML = "";
+      let info = catalog.info;
+    
+      let keys = Object.keys(info); // macht ein Array der Schlüssel: ["inventors", "1930s", "1940s", ...]
+    
+      for (let i = 0; i < keys.length; i++) {
+        let key = keys[i];
+    
+        if (Array.isArray(info[key]) && key.endsWith("0s")) {
+          let comics = info[key];
+          for (let j = 0; j < comics.length; j++) {
+            mainComicCards.innerHTML += getComicTemplate(comics[j], key, j);
+          }
+        }
+      }
     }
-  }
-}
+    
 
  
 

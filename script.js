@@ -128,7 +128,7 @@ let catalog = {
     ],
   "1940s": [
   {
-    "image": "./assets/img/super1960.png",
+    "image": "./assets/img/lexluthor.png",
     "title": "Superman #17",
     "year": 1942,
     "description": "Superman kämpft erstmals gegen Lex Luthor.",
