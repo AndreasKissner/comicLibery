@@ -29,7 +29,7 @@ let catalog = {
     
     "1930s": [
       {
-        "image": "./assets/img/super1930.png",
+        "image": "./assets/img/superman1.png",
         "title": "Action Comics #1",
         "year": 1938,
         "description": "Erster Auftritt von Superman",
@@ -62,7 +62,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1940.png",
+        "image": "./assets/img/superman2.png",
         "title": "Superman #1",
         "year": 1939,
         "description": "Erstes Solo-Heft",
@@ -94,7 +94,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1950.png",
+        "image": "./assets/img/superman3.png",
         "title": "Newspaper Strip",
         "year": 1939,
         "description": "Tägliche Comicstrips in Zeitungen",
@@ -152,7 +152,7 @@ let catalog = {
     ]
   },
   {
-    "image": "./assets/img/super1940.png",
+    "image": "./assets/img/superman4.png",
     "title": "Action Comics #64",
     "year": 1943,
     "description": "Superman im Kampf gegen Spionage während des Zweiten Weltkriegs.",
@@ -176,7 +176,7 @@ let catalog = {
     ]
   },
   {
-    "image": "./assets/img/super1940.png",
+    "image": "./assets/img/superman5.png",
     "title": "Superman #38",
     "year": 1946,
     "description": "Superman entdeckt neue Kräfte und seine Beziehung zu Lois Lane entwickelt sich.",
@@ -203,7 +203,7 @@ let catalog = {
 
     "1950s": [
       {
-        "image": "./assets/img/super1950.png",
+        "image": "./assets/img/superman6.png",
         "title": "Superman's Pal Jimmy Olsen #1",
         "year": 1954,
         "description": "Start der Solo-Serie von Jimmy Olsen, Supermans Freund, mit kuriosen Abenteuern.",
@@ -235,7 +235,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1950.png",
+        "image": "./assets/img/superman7.png",
         "title": "The Supergirl from Krypton!",
         "year": 1959,
         "description": "Erste Erscheinung von Supergirl (Kara Zor-El), Supermans Cousine.",
@@ -267,7 +267,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1950.png",
+        "image": "./assets/img/superman8.png",
         "title": "The Battle with Bizarro!",
         "year": 1959,
         "description": "Debüt von Bizarro, einem fehlgeschlagenen Superman-Klon mit verzerrter Logik.",
@@ -301,7 +301,7 @@ let catalog = {
     ],
     "1960s": [
       {
-        "image": "./assets/img/super1960.png",
+        "image": "./assets/img/superman9.png",
         "title": "The Last Days of Superman!",
         "year": 1962,
         "description": "Superman glaubt, dass er sterben wird, und verabschiedet sich von seinen Freunden – ein emotionaler Klassiker.",
@@ -333,7 +333,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1960.png",
+        "image": "./assets/img/superman11.png",
         "title": "Superman's New Power!",
         "year": 1960,
         "description": "Superman entdeckt eine neue Energie-Projektil-Kraft, verliert aber vorübergehend seine anderen Fähigkeiten.",
@@ -367,7 +367,7 @@ let catalog = {
         ]
       },
       {
-        "image": "./assets/img/super1960.png",
+        "image": "./assets/img/superman10.png",
         "title": "The Super-Duel in Space",
         "year": 1961,
         "description": "Superman kämpft gegen Brainiac in einem intergalaktischen Showdown – ein Sci-Fi-Highlight der Ära.",
@@ -403,9 +403,3 @@ let catalog = {
   }
 }
 
-/* 
-let img = document.getElementById("output");
-img.src = catalog.info.inventors[0].image;  */// Setzt den src-Wert des img-Elements
-
-
-/* console.log(catalog.info.inventors); */

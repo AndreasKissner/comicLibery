@@ -1,6 +1,8 @@
   .comic-card {
-    position: relative; /* hinzugefügt */
-    z-index: 2; /* über dem Symbol */
+    position: relative;
+    /* hinzugefügt */
+    z-index: 2;
+    /* über dem Symbol */
     color: blue;
     font-family: monospace;
     font-weight: 900;
@@ -12,17 +14,16 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     margin: 50px;
-    border-left:4px solid rgb(199, 195, 196);
+    border-left: 4px solid rgb(199, 195, 196);
     border-top: 4px solid rgb(139, 136, 136);
     transition: transform 200ms ease-in-out;
   }
-  
+
   .comic-card:hover {
     transform: scale(1.05);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.232);
-  
   }
-  
+
   .comic-image {
     width: 100%;
     height: 200px;
@@ -31,16 +32,16 @@
     /* zeigt mehr vom oberen Bildbereich eines img immer gut*/
     display: block;
   }
-  
+
   .comic-content {
     padding: 16px;
   }
-  
+
   .comic-title {
     font-size: 1.5rem;
     margin: 0;
   }
-  
+
   .comic-year,
   .comic-description,
   .comic-creators,
@@ -49,36 +50,36 @@
     margin: 8px 0;
     font-size: 16px;
   }
-  
+
   .like_box {
     display: flex;
     gap: 50px;
   }
-  
+
   .year_like_box {
     display: flex;
     gap: 8px;
     align-items: center;
   }
-  
+
   .like-heart {
     width: 24px;
     height: 24px;
     filter: hue-rotate(-100deg) saturate(2);
   }
-  .liked_after{
-     filter:none;
+
+  .liked_after {
+    filter: none;
   }
+
   .like-heart:hover {
     transform: scale(1.2);
-   
   }
-  
-  
+
   .comic-comments h3 {
     margin-bottom: 8px;
   }
-  
+
   .comment-list {
     max-height: 100px;
     overflow-y: auto;
@@ -89,39 +90,68 @@
     background-color: rgb(197, 181, 181);
     font-size: 12px;
   }
-  
+
   .comment-list ul {
     margin: 0;
     padding: 8px;
   }
-  
+
   .comment-list li {
     margin-bottom: 6px;
     font-size: 16px;
   }
-  
+
   /* scroll STyle */
   .comment-list::-webkit-scrollbar {
     width: 8px;
   }
-  
+
   .comment-list::-webkit-scrollbar-track {
     background: #f0f0f0;
     border-radius: 8px;
   }
-  
+
   .comment-list::-webkit-scrollbar-thumb {
     background-color: rgb(224, 207, 23);
     border-radius: 8px;
     border: 2px solid #f0f0f0;
   }
-  
+
   .comment-list {
     scrollbar-width: thin;
     scrollbar-color: rgb(232, 219, 224) #cfc4c4;
   }
 
- 
+  .input_field {
+    color: blue;
+    border: 3px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Tower of Silence';
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+.input_field::placeholder{
+  color: blue;
+}
+  .btn_send {
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Tower of Silence';
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: #f2f0f0;
+    color: rgb(42, 16, 240);
+    border: 2px solid #0ff;
+    transition: all 0.4s ease;
+  }
+
+  .btn_send:hover {
+    background-color: rgb(46, 174, 191);
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 8px #0ff, 0 0 16px #0ff;
+  }
 
   /* Shadow Logo */
   .superman-symbol {
@@ -132,18 +162,17 @@
     opacity: 0;
     transition: all 400ms ease-in-out;
     width: 120px;
-    z-index: 1; /* behind the Card */
-    filter: grayscale(70%) brightness(0.5); 
+    z-index: 1;
+    /* behind the Card */
+    filter: grayscale(70%) brightness(0.5);
     pointer-events: none;
   }
-  
-  
+
   .card:hover .superman-symbol {
     opacity: 0.1;
     bottom: 180px;
   }
-  
- 
+
   .superman-symbol {
     position: absolute;
     bottom: 150px;
@@ -152,14 +181,12 @@
     opacity: 0;
     transition: all 400ms ease-in-out;
     width: 120px;
-    z-index: 1; 
+    z-index: 1;
     filter: grayscale(50%) brightness(0.5);
     pointer-events: none;
   }
-  
 
   .comic-card:hover .superman-symbol {
     opacity: 0.1;
-    bottom: 170px; 
+    bottom: 170px;
   }
-  

@@ -38,7 +38,6 @@ body{
     justify-content: center;
 }
 
-
 .card {
     position: relative; /* hinzugefügt */
     z-index: 2; /* über dem Symbol */
@@ -68,14 +67,18 @@ body{
     object-fit: cover;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 10px solid rgba(85, 219, 224, 0.62);
     display: block;
     background-color: #f5f5f5; 
 }
 
 .info {   
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: 12px;
+
     border-bottom-left-radius: 10px;
 }
 .img_inv{
@@ -91,21 +94,6 @@ body{
     padding: 8px 8px 12px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    
-}
-
-.counter_heart{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.like_icon{
-    height: 30px;
-}
-.like_icon:hover{
-    transform:scale(1.2);
 }
 
 .card-properties {
@@ -114,7 +102,6 @@ body{
     justify-content: flex-start;
     gap: 4px;
     width: 100%;
-
 }
 
 .card-badge {
@@ -126,15 +113,11 @@ body{
     padding: 4px 8px;
 }
 
-.card-likes {
-    margin-left: auto;
-    font-size: 1.4rem;
-    line-height: 1;
-}
-
 .text_info {
     font-size: 20px;
+    text-align: left;
 }
+
 /* Shadow Logo */
   .superman-symbol {
     position: absolute;
@@ -148,7 +131,6 @@ body{
     filter: grayscale(70%) brightness(0.5); 
     pointer-events: none;
   }
-  
   
   .card:hover .superman-symbol {
     opacity: 0.1;

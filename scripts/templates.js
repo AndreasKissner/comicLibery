@@ -26,10 +26,10 @@ function getMainTemplate(indexCreator) {
                             <div class="card-badge" id="badge-name">${inventor.miniName}</div>
                             <div class="card-badge" id="badge-role">${inventor.role}</div>
                             <div class="card-likes" id="card-likes">
-                                <div class="counter_heart">
+                              <!-- <div class="counter_heart">
                                 <img  onclick="likeEvent()" id="like_img" class="like_icon" src="${inventor.imageheart}" alt="Like Heart">
                                 <p id="counter" class="counter_number">${inventor.likes}</p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                         <h2 id="card-title">${inventor.name}</h2>
@@ -57,13 +57,13 @@ function getComicTemplate(comics, key, index) {
               <div class="like_box">
               <p class="comic-year">Jahr: ${comics.year}</p>
               <div class="year_like_box">
-             
+            
              <img 
                id="like_heart-${key}-${index}" 
                onclick="likeEvent('${key}', ${index})" 
                src="${comics.heartLike}" 
                alt="Like Heart" 
-               class="like-heart ${comics.liked ? 'liked' : ''}" 
+               class="like-heart ${comics.liked ? 'liked_after' : ''}" 
                />
               <p class="likes">Likes</p>
              <span 
@@ -78,22 +78,24 @@ function getComicTemplate(comics, key, index) {
                 <h3>Kommentare:</h3>
                 
                 <div class="comment-list">
-                  <ul>
-                  ${comics.comments.map(comment => `
-                    <li><strong>${comment.name}:</strong> ${comment.comment}</li>
-                  `).join("")}
-                  </ul>
+             <ul id="comment-list-${key}-${index}"></ul>
+
                 </div>
                 <label for="comment_field">Ihr Kommentar</label>
-                <input type="text" id="commment_field" placeholder="max. 150 Zeichen">
-                <button onclick="moveComments" id="send_comment" type="button">Send</button>
+               <input type="text" id="comment_field-${key}-${index}" placeholder="max. 150 Zeichen" class="input_field">
+
+                <button onclick="moveComments('${key}', ${index})" id="send_comment-${key}-${index}" type="button" class="btn_send">Send</button>
+
               <img src="assets/img/shadowlogo.png" class="superman-symbol">
               </div>
                
-              
             </div>
            
           </div>
-        
     `
 }
+
+
+
+
+
