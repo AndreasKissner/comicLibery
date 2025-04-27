@@ -12,7 +12,7 @@ function init() {
 function overlayToggle(){
     let overlay = document.getElementById("overlay");
     overlay.classList.toggle('d_none')
-}
+} 
 
 
 function bubbleStopEvent(event){

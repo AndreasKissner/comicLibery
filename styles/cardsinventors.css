@@ -1,6 +1,3 @@
-
-
-
 @font-face {
     font-family: 'Tower of Silence';
     src: url('../assets/fonts/TowerofSilence.woff2') format('woff2'),
@@ -17,7 +14,6 @@
 
 body{
     font-family: 'Tower of Silence';
-    font-size: 300;
     font-size: 16px;
     cursor: pointer;
 }
@@ -43,13 +39,11 @@ body{
     z-index: 2; /* über dem Symbol */
     color: blue;
     background-color: silver;
-    backdrop-filter: blur(10px);
     border-top: 5px solid rgba(255, 255, 255, 0.438);
     border-left: 5px solid rgba(255, 255, 255, 0.459);
     box-shadow: 3px 3px 3px rgba(114, 117, 113, 0.866);
-    width: 350px;
-    height: 550px;
-    overflow: hidden;
+    width: 300px;
+    height: 540px;
     border-radius: 20px;
     text-align: center;
     transition: transform 250ms ease-in-out, box-shadow 250ms ease-in-out;
@@ -78,7 +72,6 @@ body{
     position: absolute;
     top: 10px;
     right: 12px;
-
     border-bottom-left-radius: 10px;
 }
 .img_inv{
@@ -114,7 +107,7 @@ body{
 }
 
 .text_info {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
 }
 

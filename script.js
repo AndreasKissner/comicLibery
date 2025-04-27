@@ -10,10 +10,20 @@ let catalog = {
         "role": "artist",
         "name": "Joe Shuster",
         "textInfo": "Joe Shuster war der Zeichner von Superman,den er 1938 zusammen mit Jerry Siegel erschuf. Geboren am 10. Juli 1914 in Toronto, prägte er das Aussehen des Superhelden. Trotz seines Erfolgs hatte Shuster finanzielle Schwierigkeiten und starb 1992. Sein Erbe lebt in Superman weiter.",
+        "imageheart": "./assets/img/heartlike.png",     
+      },
+      {
+        "logo": "./assets/img/logo.png",
+        "image": "./assets/img/superman.png",
+        "miniName": "superman",
+        "role": "superhero",
+        "name": "Superman / Kal-el",
+        "textInfo": "Superman, geboren als Kal-El auf dem Planeten Krypton, wurde zur Erde geschickt, bevor seine Heimat zerstört wurde. Unter der Identität Clark Kent wuchs er in Smallville auf. Mit übermenschlichen Kräften, darunter Fliegen,Stärke, Hitzeblick, kämpft er unermüdlich für Gerechtigkeit. Superman ist ein Symbol der Hoffnung.",
         "imageheart": "./assets/img/heartlike.png",
-        "likes": 1250,
+        "likes": 2500,
         "liked": false
       },
+      
       {
         "logo" : "./assets/img/logo.png",
         "image": "./assets/img/jerry.png",
@@ -22,8 +32,6 @@ let catalog = {
         "name": "Jerry Siegel",
         "textInfo": "Jerry Siegel war der Autor von Superman, den er 1938 mit dem Zeichner Joe Shuster erschuf. Geboren am 17. Oktober 1914 in Cleveland, entwickelte Siegel die Idee des legendären Helden mit übermenschlichen Kräften. Auch Siegel lange Zeit mit finanziellen Problemen zu kämpfen. Er starb 1996 – doch seine kreative Vision lebt in Superman bis heute weiter.",
         "imageheart": "./assets/img/heartlike.png",
-        "likes": 1110,
-        "liked": false
       }
     ],
     
